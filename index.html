@@ -212,7 +212,12 @@
                     document.getElementById("container").innerHTML = html3;
                 }
                 function community(){
-                    var html4 = "<h1>Community</h1><br><br><div id='community_container'></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><input id='message' type='text'><button onclick='post()'>Send</button><br><br><br>";
+                    alert("Make sure you are sign up or signed in");
+                    user = auth.currentUser.uid;
+                    if (user == null){
+                        alert("Please sign up or sign in to view community");
+    }else if(auth.currentUser.uid != null){
+        var html4 = "<h1>Community</h1><br><br><div id='community_container'></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><input id='message' type='text'><button onclick='post()'>Send</button><br><br><br>";
                     document.getElementById("container").innerHTML = html4;
                     setTimeout(function(){
             firebase.database().ref("message").on("child_added", function (snapshot) {
@@ -232,6 +237,7 @@
                 document.getElementById("community_container").innerHTML += html;
             });
         }, 2000);
+    }
                 }
                 var myName = "Vansh";
                 function post() {
