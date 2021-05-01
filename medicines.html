@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Medicines</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            img {
+  max-width: 85%;
+  height: auto;
+}
+            blockquote{
+                text-align: right;
+            }
+            body{
+                background: linear-gradient(rgb(252, 252, 216), yellow,rgb(9, 184, 9));
+            }
+            li{
+                border: 1px solid black;
+                position: absolute;
+                list-style: none;
+            }
+            li:hover{
+                background-color: dodgerblue;
+            }
+            #name{
+                font-family: 'Hanalei', cursive;
+            }
+            a{
+                color: black;
+                padding: 15px 5px;
+                text-decoration: none;
+                display: inline-block;
+            }
+            .my_nav_bar{
+                list-style: none;
+                position: sticky;
+                top: 0;
+                cursor: pointer;
+                z-index: 10;
+            }
+            li{
+                margin: 5px;
+            }
+            p{
+                font-family: cursive;
+                font-size: large;
+            }
+            h2{
+                font-family: cursive;
+            }
+            .movie_head{
+                font-size: 20px;
+                padding: 6px 22px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                width: 90%;
+                display: inline-block;
+            }
+
+            .movie_head i{
+                float: right;
+            }
+
+            .movie_text span{
+                color: #ff7700;
+            }
+            #fabiflu, #remdesivir{
+                border: 1px solid black;
+                width: 90%;
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+            #pharmacy_site_link{
+                color: rgb(24, 154, 201);
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <nav class="navbar-inverse my_nav_bar" id="main">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" >Medicines</a>
+                </div>
+            <div class="collapse navbar-collapse" id="MyNavbar">
+                <ul class="nav navbar-nav">
+                    <li id="l3" class="links"><a href="index.html">Dashboard</a></li>
+                    <li id="l" class="links"><a href="#main">Home</a></li>
+                    <li id="l2" class="links"><a href="covid.html">Covid 19</a></li>
+                    <li id="l4" class="links"><a href="index.html">Hospitals</a></li>
+                    <li id="l9" class="links"><a href="resource.html">Covid resources</a></li>
+                    <li id="l10" class="links"><a href="vaccine.html">Covid vaccine</a></li>
+                </ul>
+            </div>
+            </nav>
+            <h1>Medicines</h1>
+            <p>By Vansh Mohan</p><br><br><br>
+            <div class="page-header" id="medicine">
+                <h2 class="text-capitalize">medicines for covid</h2>
+            </div>
+
+
+            <div id="fabiflu">
+                <img id="fabiflu_img" src="https://www.thehindu.com/sci-tech/health/qqe11f/article31879293.ece/alternates/FREE_615/fabiflujpg">
+                <br><br><h3>Fabiflu</h3>
+                <h4>By Glenmark Pharmaceuticals</h4>
+                <p>For getting this medicine you can refer the <a id="pharmacy_site_link" href="#medicine">pharmacy sites</a> given below.</p>
+            </div><br><br>
+            <div id="remdesivir">
+                <img id="remdesivir_img" src="https://bsmedia.business-standard.com/media-handler.php?mediaPath=https://bsmedia.business-standard.com/_media/bs/img/article/2020-06/22/full/1592765826-0021.jpg&width=1200">
+                <br><br><h3>Remdesivir</h3>
+                <p>For getting this medicine you can buy it at <a id="pharmacy_site_link" rel="noopener noreferrer" target="_blank" href="https://dir.indiamart.com/impcat/remdesivir.html">IndiaMART</a>.</p>
+            </div>
+
+
+
+
+            <div class="page-header" id="medicine">
+                <h2 class="text-capitalize">medicine pharmacy sites</h2>
+            </div>
+    
+            <div class="bg-primary movie_head" data-toggle="collapse" data-target="#avengers_endgame">
+                <span class="fa fa-ambulance"></span> PharmEasy<i class="fa fa-sort-desc"></i>
+            </div>
+    
+            <div id="avengers_endgame" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img">
+                    <img src="https://netrockdeals.sirv.com/WP_netrockdeals.com/2019/07/p/h/y/pharmeasy.png" class="img-responsive img-thumbnail">
+                </div>
+
+
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                    <a target="_blank" href="https://pharmeasy.in">Click here</a>
+                </div>
+    
+            </div>
+
+
+            <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#indiamart">
+                <span class="fa fa-ambulance"></span> IndiaMART<i class="fa fa-sort-desc"></i>
+            </div>
+    
+            <div id="indiamart" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img">
+                    <img src="data:image/png;base64,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" class="img-responsive img-thumbnail">
+                </div>
+
+                
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                    <a rel="noopener noreferrer" target="_blank" href="https://dir.indiamart.com">Click here</a>
+                </div>
+            </div>
+
+
+
+
+    
+            <div class="bg-primary movie_head" data-toggle="collapse" data-target="#the_lion_king">
+                <span class="fa fa-ambulance"></span> Medlife<i class="fa fa-sort-desc"></i>
+            </div>
+    
+            <div id="the_lion_king" class="collapse">
+    
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img">
+                    <img src="https://seeklogo.com/images/M/medlife-logo-2D38B846E5-seeklogo.com.png" class="img-responsive img-thumbnail">
+                </div>
+
+                
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                    <a target="_blank" href="https://www.medlife.com/">Click here</a>
+                </div>
+            </div>
+    
+    
+    
+            <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#Frozen_2">
+                <span class="fa fa-ambulance"></span> Netmeds<i class="fa fa-sort-desc"></i>
+            </div>
+    
+            <div id="Frozen_2" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img">
+                    <img src="https://bsmedia.business-standard.com/media-handler.php?mediaPath=https://bsmedia.business-standard.com/_media/bs/img/article/2019-05/09/full/1557392501-4904.jpg&width=1200" class="img-responsive img-thumbnail">
+                </div>
+
+                
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                    <a target="_blank" href="https://www.netmeds.com/">Click here</a>
+                </div>
+            </div>
+
+
+
+            <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#1mg">
+                <span class="fa fa-ambulance"></span> 1mg<i class="fa fa-sort-desc"></i>
+            </div>
+    
+            <div id="1mg" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img">
+                    <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1571306929/logo_k1p18f.svg" class="img-responsive img-thumbnail">
+                </div>
+
+                
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                    <a target="_blank" href="https://www.1mg.com/">Click here</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#apollo">
+                <span class="fa fa-ambulance"></span> Apollo 24/7<i class="fa fa-sort-desc"></i>
+            </div>
+    
+            <div id="apollo" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img">
+                    <img src="https://www.apollo247.com/campaign/online-medical-consultation/images/logo.png" class="img-responsive img-thumbnail">
+                </div>
+
+                
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                    <a target="_blank" href="https://www.apollo247.com/medicines">Click here</a>
+                </div>
+            </div>
+            <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#apollopharmacy">
+                <span class="fa fa-ambulance"></span> Apollo pharmacy<i class="fa fa-sort-desc"></i>
+            </div>
+    
+            <div id="apollopharmacy" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img">
+                    <img src="https://www.apollopharmacy.in/pub/media/logo_full.jpg" class="img-responsive img-thumbnail">
+                </div>
+
+                
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                    <a target="_blank" href="https://apollopharmacy.in">Click here</a>
+                </div>
+            </div>
+
+
+            <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#mchemist">
+                <span class="fa fa-ambulance"></span> Mchemist<i class="fa fa-sort-desc"></i>
+            </div>
+    
+            <div id="mchemist" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img">
+                    <img src="https://www.mchemist.com/lib/images/logo.png" class="img-responsive img-thumbnail">
+                </div>
+
+                
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                    <a target="_blank" href="https://mchemist.com">Click here</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#medplusmart">
+                <span class="fa fa-ambulance"></span> Medplusmart<i class="fa fa-sort-desc"></i>
+            </div>
+    
+            <div id="medplusmart" class="collapse">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img">
+                    <img src="https://d1hl0z0ja1o93t.cloudfront.net/wp-content/uploads/2020/01/21172612/medplus-01.jpg" class="img-responsive img-thumbnail">
+                </div>
+
+                
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                    <a target="_blank" href="https://medplusmart.com">Click here</a>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>
