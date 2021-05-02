@@ -100,6 +100,20 @@
                 float: right;
                 margin-right: 30px;
             }
+            #back{
+                float: left;
+                margin-left: 10px;
+                margin-top: 0px;
+                background-color: transparent;
+                border-color: transparent;
+                font-size: x-large;
+            }
+            #heading{
+                margin-right: 110px;
+            }
+            #vansh{
+                margin-right: 101px;
+            }
         </style>
     </head>
     <body>
@@ -124,8 +138,8 @@
         </div>
         </nav>
         <center>
-            <h1>Covid Cases</h1>
-            <p>By Vansh Mohan</p><br><br>
+            <button onclick="window.location = 'covid.html';" id="back">←</button><h1 id="heading">Covid Cases</h1>
+            <p id="vansh">By Vansh Mohan</p><br><br>
             <input id="state" placeholder="Enter any state name" type="text">
             <button onclick="find_case_in_state()">Find</button>
             <br><br><br><br>
